@@ -1,0 +1,96 @@
+
+#container {
+    background: rgba(0, 255, 76,1);
+    width: 80%;
+    height: 90%;
+    margin: auto;
+}
+
+/*#haha{*/
+/*    background-image: url("/images/img.png");*/
+/*    !*why add this this background image is invisible*!*/
+/*    !*background: repeat; vs background-repeat: repeat;*!*/
+/*    background-repeat: repeat;*/
+/*    margin: auto;*/
+/*    display: inline-block;*/
+/*    height: 150px;*/
+/*    width: 100px;*/
+/*    opacity: 0.4;*/
+/*    border-radius:20px;*/
+/*    !*no effect???*!*/
+/*    background-color: #F00;*/
+/*}*/
+
+.no-underline {
+    text-decoration: none;
+}
+
+.text-container {
+    text-align: right;
+}
+
+article{
+    border-radius: 5px; /* Rounded corners */
+}
+
+h1:hover{
+    background-color: #FF0000;
+    background: linear-gradient(white,blue);
+    box-shadow: 20px 20px 30px #FF0000;
+}
+/*nav:visited{*/
+/*    box-shadow: 20px 20px 30px #FF0000;*/
+/*}*/
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+.lowlight {
+    color: blue;
+    font-weight: bold;
+}
+
+/*h1{*/
+/*    color: white;*/
+/*}*/
+
+/*p{*/
+/*    color: aliceblue;*/
+/*    font-size: 1.2em;*/
+/*}*/
+h1,p{
+    color: white;
+}
+
+/*static default? what is default?*/
+.lowlight {
+    position: static;
+}
+
+nav a{
+    color: red;
+}
+img{
+    /*why max-width:100% has no difference with width:100% same with max-width: 120% vs width:120% */
+    max-width: 100%;
+    opacity: 0.5;
+}
+
+span{
+    font-size: 1.5em;
+    font-weight: bold;
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    span{
+        font-size: 0.5em;
+        font-weight: bold;
+        display: inline;
+    }
+    p{
+        display: block;
+    }
+}
