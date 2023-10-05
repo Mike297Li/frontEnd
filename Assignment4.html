@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var link = document.getElementById("myLink");
+            link.addEventListener("mouseover", function () {
+                var boldElements = document.getElementsByClassName("bold");
+                for (var i = 0; i < boldElements.length; i++) {
+                    boldElements[i].style.color = "red";
+                }
+            });
+            link.addEventListener("mouseout", function () {
+                var boldElements = document.getElementsByClassName("bold");
+                for (var i = 0; i < boldElements.length; i++) {
+                    boldElements[i].style.color = "black";
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+<a id="myLink" href="url">[If you move the mouse over here,]</a>
+<p>The color of the bold words of the following paragraph will change to red</p>
+<p>
+    <b class="bold">Document Object Model(DOM)</b><br>
+    <span class="b1">, a programming interface specification being developed<br> by the</span>
+    <b class="bold"> World Wide Web Consortium (W3C) </b>
+    <span class="b1">, <br>lets a programmer create and modify </span>
+    <b class="bold">HTML</b><br>
+    <span class="b1">
+           pages and
+        </span>
+    <b class="bold">XML</b>
+    <span class="b1">
+           documents as full-fledged program<br> objects.
+        </span>
+</p>
+</body>
+</html>
