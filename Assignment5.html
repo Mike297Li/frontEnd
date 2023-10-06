@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .button {
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 50px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+        }
+    </style>
+    <script>
+        function validateInput_0901297() {
+            // declare an array
+            const numbers = [];
+            // get num from input
+            var numElements = document.getElementsByClassName("num");
+            for (var i = 0; i < numElements.length; i++) {
+                let x = numElements[i].value;
+                const intX_0901297 = parseInt(x);
+                // is valid or not
+                if (intX_0901297 === "" || !Number.isInteger(intX_0901297)) {
+                    alert("Invalid number");
+                    return false;
+                }
+                // put number in array
+                numbers.push(intX_0901297);
+            }
+            // find out the largest number
+            const maxNumber = Math.max(...numbers);
+            alert(maxNumber + " is the hightest number")
+        }
+    </script>
+</head>
+<body>
+<p>Find the largest number</p>
+<label for="number1">Enter number 1:</label>
+<input type="text" id="number1" name="number1" class="num"><br><br>
+<label for="number2">Enter number 2:</label>
+<input type="text" id="number2" name="number2" class="num"><br><br>
+<label for="number3">Enter number 3:</label>
+<input type="text" id="number3" name="number3" class="num"><br><br>
+<button type="button" class="button" onclick="validateInput_0901297()">Find !</button>
+</body>
+</html>
