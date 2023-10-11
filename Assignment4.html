@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        function haha(){
             var link = document.getElementById("myLink");
             link.addEventListener("mouseover", function () {
                 var boldElements = document.getElementsByClassName("bold");
@@ -18,7 +18,9 @@
                     boldElements[i].style.color = "black";
                 }
             });
-        })
+        }
+          window.onload=haha;
+
     </script>
 </head>
 <body>
