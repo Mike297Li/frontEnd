@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    function caculateSupply() {
+        const maxAge=85;
+      var age=document.getElementById("age").value;
+      var amount=Math.round(document.getElementById("amount").value);
+      document.getElementById("ageOfPuppy").innerHTML="You'll need "+(85-age)*amount+ " to last you until the ripe old age "+maxAge;
+    }
+  </script>
+</head>
+<body>
+<label for="age">your age:</label><br>
+<input type="text" id="age" name="age"><br>
+<label for="amount">amount per day:</label><br>
+<input type="text" id="amount" name="amount"><br>
+<button type="button" onclick="caculateSupply()">caculateLifeSupply</button>
+<p id="ageOfPuppy"></p>
+</body>
+</html>

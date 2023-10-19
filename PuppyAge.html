@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    function caculateDogAge() {
+      var age=document.getElementById("age").value;
+      var rate=document.getElementById("rate").value;
+      document.getElementById("ageOfPuppy").innerHTML="Your doggie is "+age*rate+" years old in dog years";
+    }
+  </script>
+</head>
+<body>
+<label for="age">your puppy's age:</label><br>
+<input type="text" id="age" name="age"><br>
+<label for="rate">rate of human to dog's age:</label><br>
+<input type="text" id="rate" name="rate"><br>
+<button type="button" onclick="caculateDogAge()">caculateDogAge</button>
+<p id="ageOfPuppy"></p>
+</body>
+</html>

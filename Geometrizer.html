@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+      function calcCircumfrence(){
+          var radius=document.getElementById("radius").value;
+          document.getElementById("Circumfrence").innerHTML="The circumference is "+ 2*3.14*radius;
+      }
+      function calcArea(){
+          var radius=document.getElementById("radius").value;
+          document.getElementById("Area").innerHTML="The Area is "+ 3.14*Math.pow(radius,2);
+      }
+  </script>
+</head>
+<body>
+<label for="radius">radius:</label><br>
+<input type="text" id="radius" name="radius"><br>
+<button type="button" onclick="calcCircumfrence()">calcCircumfrence</button><br>
+<button type="button" onclick="calcArea()">calcArea</button>
+<p id="Circumfrence"></p>
+<p id="Area"></p>
+</body>
+</html>

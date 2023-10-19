@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+      function celsiusToFahrenheit(){
+          var celsius=document.getElementById("celsius").value;
+          document.getElementById("fahrenheit_show").innerHTML=celsius+"°C is "+((celsius* 9/5) + 32)+"°F";
+
+      }
+
+      function fahrenheitToCelsius(){
+          var fahrenheit=document.getElementById("fahrenheit").value;
+          document.getElementById("celsius_show").innerHTML=fahrenheit+"°F is "+((fahrenheit - 32) * 5/9)+"°C";
+      }
+  </script>
+</head>
+<body>
+<label for="celsius">celsius temprature:</label><br>
+<input type="text" id="celsius" name="celsius"><br>
+<label for="fahrenheit">fahrenheit temprature:</label><br>
+<input type="text" id="fahrenheit" name="fahrenheit"><br>
+<button type="button" onclick="celsiusToFahrenheit()">celsiusToFahrenheit</button>
+<button type="button" onclick="fahrenheitToCelsius()">fahrenheitToCelsius</button>
+<p id="fahrenheit_show"></p>
+<p id="celsius_show"></p>
+</body>
+</html>
