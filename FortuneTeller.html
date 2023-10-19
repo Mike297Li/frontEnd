@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function tellFortune(){
+            var num=document.getElementById("num").value;
+            var name=document.getElementById("name").value;
+            var location=document.getElementById("location").value;
+            var title=document.getElementById("title").value;
+            console.log("You will be a "+title+" in "+location+", and married to "+name+" with "
+                +num+" kids")
+            var resultElements = document.getElementsByClassName("result");
+            if (resultElements.length > 0) {
+                resultElements[0].innerHTML = "You will be a " + title + " in " + location + ", and married to " + name + " with " + num + " kids";
+            }
+        }
+
+    </script>
+</head>
+<body>
+<label for="num">number of children:</label><br>
+<input type="text" id="num" name="num"><br>
+
+<label for="name">parter's name:</label><br>
+<input type="text" id="name" name="name"><br>
+
+<label for="location">geographic location:</label><br>
+<input type="text" id="location" name="location"><br>
+
+<label for="title">job title:</label><br>
+<input type="text" id="title" name="title"><br>
+<button type="button" onclick="tellFortune()">tellFortune</button><br>
+<p class="result"></p>
+</body>
+</html>
